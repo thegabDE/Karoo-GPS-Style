@@ -108,7 +108,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
         <area mesh="true" fill="#dcd5d0"/>
     </m>
 
-    <!-- Closed ways (except highways and buildings -->
+    <!-- Closed ways (except highways and buildings) -->
     <m closed="yes" e="way" k="highway|building" v="~">
         <m k="landuse">
             <m v="meadow">
@@ -123,9 +123,12 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             <m v="commercial|retail">
                 <area mesh="true" fill="#d4d4d4"/>
             </m>
-            <m v="farm|farmyard|farmland|orchard|vineyard">
+            <m v="farm|farmyard">
                 <area mesh="true" fill="#a7c28f"/>
-                <area src="file:ele-res/s_farmyard.svg" symbol-height="70" symbol-width="70" />
+                <area src="file:ele-res/s_farmyard.svg" symbol-height="7" symbol-width="7" />
+            </m>
+            <m v="farmland|orchard|vineyard">
+                <area mesh="true" fill="#a7c28f"/>
             </m>
             <m v="quarry" closed="yes" zoom-min="14">
                 <area mesh="true" fill="#b8b1ad"/>
@@ -726,19 +729,50 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
     <!-- Core nodes-->
    
     <!-- Paths-->
-    <m e="way" k="highway" v="path" zoom-min="13">
+    <m e="way" k="highway" v="path" zoom-min="12">
         <m select="first">
-            <!-- <m k="mtb_scale" v="mtbs_5|mtbs_6|mtbs_0|mtbs_1|mtbs_2mtbs_3|mtbs_4">
-            </m> -->
-            <m e="way" k="mtb_scale" v="mtbs_4|mtbs_5|mtbs_6|mtbs_3">
-                <line stroke="#FF0000" stroke-width="0.8" stroke-dasharray="2,4" stroke-linecap="butt" />
+			<!-- mtbs_0: Very Easy - green 00cc66 -->			
+            <m e="way" k="mtb_scale" v="mtbs_0">
+			    <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+                <line stroke="#00cc66" stroke-width="1.2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#00cc66" stroke-width="4" />
+            </m>	
+			<!-- mtbs_1: Easy - solid blue 0066ff -->			
+            <m e="way" k="mtb_scale" v="mtbs_1">
+                <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+				<line stroke="#0066ff" stroke-width="1.2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#0066ff" stroke-width="4" />
+            </m>	
+			<!-- mtbs_2: Intermediate - red FF0000 -->		
+            <m e="way" k="mtb_scale" v="mtbs_2">
+			    <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+                <line stroke="#FF0000" stroke-width="1.2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#FF0000" stroke-width="4" />
             </m>
-            <!-- <m k="mtb_scale" v="mtbs_0|mtbs_1|mtbs_2">
-                <line stroke="#5fbd18" stroke-width="0.5" stroke-dasharray="4,4" />
+			<!-- mtbs_3: Difficult - black 000000 -->
+            <m e="way" k="mtb_scale" v="mtbs_3">
+                <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+				<line stroke="#000000" stroke-width="1.2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#000000" stroke-width="4" />
             </m>
-            <m k="mtb_scale" v="mtbs_3|mtbs_4">
-                <line stroke="#ea27ae" stroke-width="0.5" stroke-dasharray="4,4" />
-            </m>   -->
+			<!-- mtbs_4: Very difficult - orange ff9900 -->
+            <m e="way" k="mtb_scale" v="mtbs_4">
+			    <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+                <line stroke="#ff9900" stroke-width="1.3" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#ff9900" stroke-width="4" />
+            </m>	
+			<!-- mtbs_5: Extremely difficult - orange ff9900 -->		
+            <m e="way" k="mtb_scale" v="mtbs_5">
+			    <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+                <line stroke="#ff9900" stroke-width="1.3" stroke-dasharray="5,2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#ff9900" stroke-width="4" />
+            </m>
+			<!-- mtbs_6: Deadly - dark orange cc6600 -->
+            <m e="way" k="mtb_scale" v="mtbs_6">
+			    <line stroke="#e6e6e6" stroke-width="2.3" stroke-linecap="butt" />
+                <line stroke="#cc6600" stroke-width="1.5" stroke-dasharray="5,2" stroke-linecap="butt" />
+				<pathText fill="#ffffff" k="mtb_scale" size="12" stroke="#cc6600" stroke-width="4" />
+            </m>
             <m k="cycleway" v="*">
                 <m k="surface" v="unpaved|compacted|ground|gravel|dirt|grass|sand|fine_gravel">
                     <line use="path"/>
