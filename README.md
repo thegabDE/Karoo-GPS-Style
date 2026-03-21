@@ -5,10 +5,17 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 <a href="https://www.buymeacoffee.com/enderthor" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Instructions:
-- Download this file (the correct one, Karoo updates these files in some releases). Sometimes if you donwload xml files in github, it can have some problems. Please donwload the whole project (zip) and uncompress it. You can also download the raw file (not copy the raw file).
+- Download this file (the correct one, Karoo updates these files in some releases). Sometimes if you donwload xml files in github, it can have some problems. Please download the whole project (zip) and uncompress it. You can also download the raw file (not copy the raw file).
 - Backup original karoo theme (offline_vXX.xml) before replacing it with this one. 
 - Download manual version of the latest elevate theme (http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme), uncompres it and copy the folder "ele-res" to the /mnt/sdcard/ folder on your Karoo device.
 - Copy this file to the /mnt/sdcard/ folder on your Karoo device (overwriting the existing offline_vXX.xml file).
+- For map files, please download the OpenAndroMaps (OAM) files you want and name them differently than the original ones. For example you have the map 'bayern.map' you need to add another map file with name 'bayern_oam.map' so that both files are in the offline/maps folder. This way you can keep using the heatmaps and heightlines. If you simply replace the original maps with the new ones from OAM they will be deleted and overwritten at next startup of the device.
+
+## Pictures
+![karoo3_3](https://github.com/user-attachments/assets/40fb8682-491c-4d7f-9d55-7ad117686ea8)
+![karoo3_2](https://github.com/user-attachments/assets/c3fd6a46-de6b-4a06-ad02-54bea66940e9)
+![karoo3_1](https://github.com/user-attachments/assets/cb549c71-447e-411f-92d8-0f7289729c7f)
+
 
 ## Versions
 - v-1.0 Initial Release
@@ -23,6 +30,9 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - v-1.9 Added footway without sidewalk
 - v-1.10 Adapted to new offlines from karoo (minors changes)
 - v-1.14 Adapted to new offline (v14) from karoo (minor changes river and streams)
+- v-1.0 (thegabDE)
+   - fixing the farmland and farmyard issue along with the symbol height issue from the original.
+   - Also now the definition of singletrail-chart is now based on ITRS-IMBA (Europe) with definitions ranging from S0 to S6. The trails are named by their mtbs_scale definition.
 
 
 ## License
