@@ -12,9 +12,10 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - For map files, please download the OpenAndroMaps (OAM) files you want and name them differently than the original ones. For example you have the map 'bayern.map' you need to add another map file with name 'bayern_oam.map' so that both files are in the offline/maps folder. This way you can keep using the heatmaps and heightlines. If you simply replace the original maps with the new ones from OAM they will be deleted and overwritten at next startup of the device.
 
 ## Pictures
-![karoo3_3](https://github.com/user-attachments/assets/40fb8682-491c-4d7f-9d55-7ad117686ea8)
-![karoo3_2](https://github.com/user-attachments/assets/c3fd6a46-de6b-4a06-ad02-54bea66940e9)
-![karoo3_1](https://github.com/user-attachments/assets/cb549c71-447e-411f-92d8-0f7289729c7f)
+![karoo_3](https://github.com/user-attachments/assets/6ea024fd-f7f0-4e6a-aa38-5ba0a79fae0a)
+![karoo_2](https://github.com/user-attachments/assets/56924479-d82b-46bd-8dc7-c5fc920d8278)
+![karoo_1](https://github.com/user-attachments/assets/bb55deb9-bebd-4d4f-a631-220ab1cc257e)
+
 
 
 ## Versions
