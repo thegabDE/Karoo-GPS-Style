@@ -29,10 +29,8 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB modified b
 - v-1.9 Added footway without sidewalk
 - v-1.10 Adapted to new offlines from karoo (minors changes)
 - v-1.14 Adapted to new offline (v14) from karoo (minor changes river and streams)
-- v-1.0 (thegabDE)
-   - fixing the farmland and farmyard issue along with the symbol height issue from the original project.
-   - Also now the definition of singletrail-chart is based on ITRS-IMBA (Europe) with definitions ranging from S0 to S6. The trails are named by their mtbs_scale definition. For example 'mtbs_1' for S1 trails.
-
+- v-1.0 (thegabDE) fixing the farmland and farmyard issue along with the symbol height issue from the original project. Also now the definition of singletrail-chart is based on ITRS-IMBA (Europe) with definitions from S0 to S6. The trails are named by their mtbs_scale definition. For example 'mtbs_1' for S1 trails.
+- v-1.1 (thegabDE) editing prioritization of definitions 
 
 ## License
 
@@ -58,6 +56,7 @@ SOFTWARE.
 THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM.
 
 "Hammerhead", "Karoo", "Karoo SDK", and "Karoo 2" may be copyright and/or trademark and/or property of Hammerhead Navigation Inc or a parent or subsidiary company.
+"ITRS-IMBA", "ITRS", "IMBA" may be copyright and/or trademark and/or property of International Mountain Bicycling Association or a parent or subsidiary company.
 
 
 ## Symbols and patterns licenses:
